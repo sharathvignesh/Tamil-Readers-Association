@@ -1,0 +1,10 @@
+# For SEO
+#<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond  %{REQUEST_FILENAME} !-d
+RewriteCond  %{REQUEST_FILENAME} !-f
+RewriteRule ^([\w-]+)$ /index.php?action=$1 [QSA,L]
+
+#</IfModule>
+

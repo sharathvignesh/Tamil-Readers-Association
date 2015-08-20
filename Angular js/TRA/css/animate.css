@@ -1,0 +1,18 @@
+.myDiv{
+    width:400px;
+    height:200px;
+    background-color:red;
+}
+.fadeIn-setup{
+  -webkit-transition: 1s linear opacity;
+  -moz-transition: 1s linear opacity;
+  -o-transition: 1s linear opacity;
+  transition: 1s linear opacity;
+}
+.fadeIn-setup{
+  opacity:0;
+}
+
+.fadeIn-setup.fadeIn-start {
+  opacity: 1;
+}

@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /web/
+
+RewriteRule ^$ /web/ [L]
+
+RewriteCond %{REQUEST_URI} !/^\/index\.php/
+RewriteRule ^(.*)index\.php(.*)$ /web/ [L]
+
+RewriteCond  %{REQUEST_FILENAME} !-d
+RewriteCond  %{REQUEST_FILENAME} !-f
+RewriteRule ^([\w-]+)$ /web/index.php?action=$1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !/^\/web/
+RewriteRule ^(.*) $1 [L]
+
+RewriteCond %{REQUEST_URI} !.*web.*
+RewriteRule ^(.*) web/$1 [L]
+
+#RewriteRule ^(.*)index\.php(.*)$ /web/index.php?action=ListApps [L]
+#RewriteRule ^([\w-]+)$ /index.php?action=$1 [QSA,L]
+#RewriteRule ^(.*) web/$1 [L]
+

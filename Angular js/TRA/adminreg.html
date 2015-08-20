@@ -1,0 +1,193 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+	
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>AdminReg</title>
+        
+        	 <link rel="shortcut icon" href="images/naso_icon.png">
+        	<link href="css/bootstrap.min.css" rel="stylesheet">
+        	<link href="css/bootstrap.css" rel="stylesheet">
+
+            <link href="css/animate.css" rel="stylesheet" type="text/css">
+          
+            <link rel="stylesheet" type="text/css" href="css/customadmin.css" media="screen">
+    	 <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    	 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular-animate.js"></script>
+         <script src="js/angular.min.js"></script>
+         
+</head>     
+   
+<body>
+	
+	
+<div id="home" >
+        
+  
+    <div class="container text-center" >
+            
+                <h1>ADMIN REGISTRATION FORM</h1>
+                <p id="online" class="text-nowrap col-md-12">- Sign up a new Admin</p>
+                
+       
+           </div>
+  
+  
+     <div class="container" >
+            	
+    <form id="form2" class="form-horizontal check-element animate-show" role="form"  ng-app="" name="myForm2" novalidate  ng-animate="{show: 'fadeIn'}">
+       
+      
+       
+       <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="fnd">First Name:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <input type="text"  style="background-color:white;" class="form-control" id="fnd" placeholder="Enter First Name" name="fnd" ng-model="fnd" required>
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.fnd.$dirty && myForm2.fnd.$invalid">
+                <span ng-show="myForm2.fnd.$error.required">First Name is required.</span>
+                </span>
+              </div>
+          </div>
+          
+          
+          
+            <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="lnd">Last Name:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <input type="text"  style="background-color:white;" class="form-control" id="lnd" placeholder="Enter Last Name" name="lnd" ng-model="lnd" required>
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.lnd.$dirty && myForm2.lnd.$invalid">
+                <span ng-show="myForm2.lnd.$error.required">Last Name is required.</span>
+               </span>
+              </div>
+          </div>
+          
+              <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="ln">Login Name:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <input type="text"  style="background-color:white;" class="form-control" id="ln" placeholder="Enter Login Name" name="ln" ng-model="ln" required>
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.ln.$dirty && myForm2.ln.$invalid">
+                <span ng-show="myForm2.ln.$error.required">Login Name is required.</span>
+               </span>
+              </div>
+          </div>
+       
+       
+          
+         <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="pwd">Password:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" ng-model="pwd" required>
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.pwd.$dirty && myForm2.pwd.$invalid">
+                <span ng-show="myForm2.pwd.$error.required">Password is required.</span>
+                </span>
+              </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="rol">Role:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <input type="text"  style="background-color:white;" class="form-control" id="lnd" placeholder="Enter Role" name="rol" ng-model="rol" required>
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.rol.$dirty && myForm2.rol.$invalid">
+                <span ng-show="myForm2.rol.$error.required">Optional.</span>
+               </span>
+              </div>
+          </div>
+            <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="add">Address:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <textarea  style="background-color:white;" class="form-control" id="add" placeholder="Enter Address" name="add" ng-model="add" required> </textarea>  
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.add.$dirty && myForm2.add.$invalid">
+                <span ng-show="myForm2.add.$error.required">Optional.</span>
+               </span>
+              </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="control-label col-sm-5 col-md-5 col-lg-5" for="ph">Phone Number:</label>
+            
+             <div class="col-sm-3 col-md-3 col-lg-3">          
+             <input type="text"  style="background-color:white;" class="form-control" id="ph" placeholder="Enter Phone Number" name="ph" ng-model="ph" required>
+             </div>
+     
+              <div id="validation" style="float:left;">
+              	<span  style="color:red" ng-show="myForm2.ph.$dirty && myForm2.ph.$invalid">
+                <span ng-show="myForm2.ph.$error.required">Phone Number is required.</span>
+               </span>
+              </div>
+          </div>
+          
+           <div class="form-group">
+    	
+           <label class="control-label col-sm-5 col-md-5 col-lg-5" for="email">Email:</label>
+            
+            <div class="col-sm-3 col-md-3 col-lg-3" >
+            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" ng-model="email" required>
+            </div>
+       
+            <div id="validation" style="float:left;">
+       	       <span  style="color:red" ng-show="myForm2.email.$dirty && myForm2.email.$invalid">
+               <span ng-show="myForm2.email.$error.required">Email is required.</span>
+           	   <span ng-show="myForm2.email.$error.email">Invalid email address.</span>
+           	   </span>
+       		</div>
+        
+          </div>
+     
+             
+            <div class="form-group text-center">        
+             
+             <a  href="#" class="btn-lg shake sub submit" >Save </a>
+             <a  href="Dashboard.php#listadmin" class="btn-lg shake sub back" ng-click="clicked3()">Cancel </a>
+             
+           </div>
+         
+      </form>
+   
+     </div>
+  
+  
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

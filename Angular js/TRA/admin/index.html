@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+	<head>
+    	
+      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+        <title>
+        	
+        Tamil Readers' Association
+        </title>
+        
+        	<link rel="shortcut icon" href="images/naso_icon.png">
+        	<link href="css/bootstrap.min.css" rel="stylesheet">
+        	<link href="css/bootstrap.css" rel="stylesheet">
+        	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+            <link href="css/animate.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="css/custom.css" media="screen">
+            
+    	 <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    	 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular-animate.js"></script>
+         <script src="js/angular.min.js"></script>
+         
+   </head>     
+   
+<body>
+	
+	
+
+
+<div id="home" class="section-home fullscreen one-slide parallax dark-section" >
+    
+    <!-- Start Full Slider -->
+    <div class="home-slider">
+        
+        <!-- Slide 1 -->
+        <div class="item" style="background:url(images/bg6.jpg)" >
+            <div class="section-overlay"></div>
+            <div class="container" ng-app="" ng-controller="personController">
+            
+            <div class="container text-center" id="head1">
+            
+                <h1 class="fit-text">TAMIL READER'S ASSOCIATION</h1>
+                <p id="online" class="text-nowrap">- Online Library portal</p>
+                <a href="#about" class="btn-sys btn-light btn-border btn-large btn-crv scroll-to btn-lg" style="margin-top: 47px;" ng-click="clicked()" ng-show="Var">Admin Sign In </a>
+                
+                <!--<button type="button" class="btn btn-default" ng-click="toggle()">Sign In</button>
+            -->
+            
+            </div>
+            
+            <div class="container" style="margin-top: 300px" >
+            	
+  <form class="form-horizontal check-element animate-show" role="form"  ng-app="" name="myForm" novalidate ng-show="myVar" ng-animate="{show: 'fadeIn'}">
+    <div class="form-group">
+    	<div class="row">
+      <label class="control-label col-sm-5 col-md-5 col-lg-5" for="email">Username:</label>
+      <div class="col-sm-3 col-md-3 col-lg-3" >
+        <input type="email" class="form-control" id="email" placeholder="Enter username" name="email" ng-model="email" required>
+       </div>
+       
+       <div id="validation" style="float:left;"><span  style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+     </div>
+      
+    </div>
+   </div>
+    <div class="form-group">
+      <label class="control-label col-sm-5 col-md-5 col-lg-5" for="pwd">Password:</label>
+      <div class="col-sm-3 col-md-3 col-lg-3">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-5 col-sm-5">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-5 col-sm-5">
+  <!--      <button type="submit" class="btn btn-default">Submit</button>-->
+   <a href="#about" class="btn-sys btn-light btn-border btn-large btn-crv scroll-to btn-lg" style="margin-top: 20px; margin-left: 36px">Submit</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+</div>
+        </div>
+        
+   
+    </div>
+    <!-- End Full Slider -->
+
+</div>
+
+
+
+    <script>
+function personController($scope) {
+
+    $scope.myVar = false;
+    $scope.Var=true;
+    $scope.clicked = function() {
+        $scope.myVar = true;
+          $scope.Var=false;
+    };
+}
+</script> 
+    
+    <script src="js/jquery.js"></script>
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    
+
+</body>
+</html>
